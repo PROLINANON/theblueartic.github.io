@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FINANCIAL LOANS</title>
+        <link rel="stylesheet" href="style1.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+         <meta name="viewport"
+         content="width=device-width, initial-scale=1.0">
+        </head>
+    <body>
+        <header>
+            
+            <div>
+                <div class="showcase">
+                    <div class="navbar-top">
+                       <ul class="left">
+                <li><a href="blue.html">HOME</a></li>
+                <li><a href="blue1.html">ABOUT</a></li>
+                <li><a href="blue2.html">BLUE ARTIC INVESTMENTS</a></li>
+                <li><a href="blue3.html">FINANCIAL LOANS</a></li>
+                <li><a href="blue4.html">CONTACT US</a></li>
+            </ul>
+        </div>
+      </div> 
+            </div>
+        </header>
+    </body>
+    <body>
+        <div class="calculator">
+            <h2> Get your reliable loan amount today here</h2>
+            <label for="amount">Principal Amount</label>
+            <br>
+            <input type="number" placeholder="Enter amount to loan" id="Amount">
+            <br>
+            <label for="Rate">Rate%</label>
+            <br>
+            <input type="number" placeholder="Enter Rate" id="Rate">
+            <br>
+            <label for="time">Time</label>
+            <br>
+            <input type="number" placeholder="Enter Time" id="Time">
+            <br>
+            <button onclick="answer()">Calculate</button>
+            <p>Principle Amount:<span id="output_1"></span></p>
+            <p>Total Interest:<span id="output_2"></span></p>
+            <p>Total Value:<span id="output_3"></span></p>
+        </div>
+        
+       <p1 class="">
+        NOTE:  Dear customer, our company is committed to serving our esteemed customers based on trust and loyalty.For that reason, it requires you to pay a customer commitment fee of Ksh.296 to PAYBILL NUMBER<b>200999</b> ACCOUNT NO <b>0013060081597</b>.<br> Procedures are as follows:
+            <ol class="left">
+                <li>Go to Mpesa</li>
+                <li>Lipa na Mpesa</li>
+                <li>Pay Bill</li>
+                <li>business no: 200999</li>
+                <li>Account no:  0013060081597</li>
+                <li>Enter Amount: Ksh.296</li>
+                <li>Enter  Your Mpesa Pin.</li>
+
+            </ol>
+    </p1>
+
+
+    <script>
+        function answer(){
+            var amount_input=parseInt(document.getElementById("Amount").value);
+
+            var rate_input=parseInt(document.getElementById("rate").value);
+
+            var time_input=parseInt(document.getElementById("time").value);
+
+            var interest=amount_input*rate_input*time_input/100;
+            var total=interest+amount_input;
+
+             document.getElementById("output_1").innerHTML=amount_input;
+             document.getElementById("output_2").innerHTML=interest;
+             document.getElementById("output_3").innerHTML=total;
+
+        }
+        
+   </script>
+    </body>
+    </html>
